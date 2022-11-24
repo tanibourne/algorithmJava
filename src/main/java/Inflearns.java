@@ -1,27 +1,39 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Inflearns {
 
-    public static ArrayList<String> fourth(int a, String[] s){
-    ArrayList<String> answer = new ArrayList<>();
+    public static String fifth(String s) {
+        String answer = "";
+        char [] c = s.toCharArray();
 
-    return answer;
+        int lt = 0;
+        int rt = s.length() -1;
+        char tmp;
+
+
+        while(lt < rt){
+            if( 'A' <= c[lt] || 'Z' >= c[])
+            tmp = c[lt];
+            c[lt] = c[rt];
+            c[rt] =tmp;
+            lt++;
+            rt--;
+
+        }
+
+
+
+        return answer;
     }
 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        String[] s = new String [a];
-        for(int i = 0; i < a ; i++){
-            s[i] = sc.next();
-        }
-        for(String str : Inflearns.fourth(a,s)){
 
-            System.out.println(str);
-        }
+        String str = sc.next();
 
+        System.out.println(Inflearns.fifth(str));
 
 
     }

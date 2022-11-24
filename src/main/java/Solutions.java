@@ -44,6 +44,26 @@ public class Solutions {
     }
 
 
+    public static int[] zumSecond(int[][] data) {
+        int[] answer = {};
+        ArrayList<Integer> wait = new ArrayList<Integer>();
+        int time = 0;
+
+        for(int i =1; i < data.length; i++){
+            time += data[i][2];
+            if(data[i][1] < time){
+                wait.add(data[i][0]);
+                System.out.println(wait);
+
+            }
+
+
+        }
+
+        return answer;
+    }
+
+
 
 
 
